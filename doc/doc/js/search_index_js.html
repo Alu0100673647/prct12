@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+<title>search_index.js - RDoc Documentation</title>
+
+<link type="text/css" media="screen" href="../../rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "../../";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="../../js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/darkfish.js"></script>
+
+
+<body class="file">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="../../index.html">Home</a>
+    <a href="../../table_of_contents.html#classes">Classes</a>
+    <a href="../../table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="../../Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../../Guardfile.html">Guardfile</a>
+  
+    <li class="file"><a href="../../LICENSE_txt.html">LICENSE</a>
+  
+    <li class="file"><a href="../../Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../doc/Fraccion_html.html">Fraccion.html</a>
+  
+    <li class="file"><a href="../../doc/Gemfile_html.html">Gemfile.html</a>
+  
+    <li class="file"><a href="../../doc/Guardfile_html.html">Guardfile.html</a>
+  
+    <li class="file"><a href="../../doc/LICENSE_txt_html.html">LICENSE_txt.html</a>
+  
+    <li class="file"><a href="../../doc/Matriz_html.html">Matriz.html</a>
+  
+    <li class="file"><a href="../../doc/Matrizdispersascp_html.html">Matrizdispersascp.html</a>
+  
+    <li class="file"><a href="../../doc/Matrizdispersascp/MatrizDensa_html.html">MatrizDensa.html</a>
+  
+    <li class="file"><a href="../../doc/Matrizdispersascp/MatrizDispersa_html.html">MatrizDispersa.html</a>
+  
+    <li class="file"><a href="../../doc/Object_html.html">Object.html</a>
+  
+    <li class="file"><a href="../../doc/Rakefile_html.html">Rakefile.html</a>
+  
+    <li class="file"><a href="../../doc/created_rid.html">created.rid</a>
+  
+    <li class="file"><a href="../../doc/doc/created_rid_html.html">created_rid.html</a>
+  
+    <li class="file"><a href="../../doc/index_html.html">index.html</a>
+  
+    <li class="file"><a href="../../doc/js/darkfish_js.html">darkfish.js</a>
+  
+    <li class="file"><a href="../../doc/js/jquery_js.html">jquery.js</a>
+  
+    <li class="file"><a href="../../doc/js/navigation_js.html">navigation.js</a>
+  
+    <li class="file"><a href="../../doc/js/search_js.html">search.js</a>
+  
+    <li class="file"><a href="../../doc/js/search_index_js.html">search_index.js</a>
+  
+    <li class="file"><a href="../../doc/js/searcher_js.html">searcher.js</a>
+  
+    <li class="file"><a href="../../doc/lib/fraccion_rb~_html.html">fraccion_rb~.html</a>
+  
+    <li class="file"><a href="../../doc/lib/matriz_rb~_html.html">matriz_rb~.html</a>
+  
+    <li class="file"><a href="../../doc/lib/matrizdispersascp_rb~_html.html">matrizdispersascp_rb~.html</a>
+  
+    <li class="file"><a href="../../doc/lib/mcd_rb~_html.html">mcd_rb~.html</a>
+  
+    <li class="file"><a href="../../doc/matrizdispersascp_gemspec_html.html">matrizdispersascp_gemspec.html</a>
+  
+    <li class="file"><a href="../../doc/rdoc_css.html">rdoc.css</a>
+  
+    <li class="file"><a href="../../doc/spec/matrizdispersascp_spec_rb~_html.html">matrizdispersascp_spec_rb~.html</a>
+  
+    <li class="file"><a href="../../doc/table_of_contents_html.html">table_of_contents.html</a>
+  
+    <li class="file"><a href="../../lib/fraccion_rb~.html">fraccion.rb~</a>
+  
+    <li class="file"><a href="../../lib/matriz_rb~.html">matriz.rb~</a>
+  
+    <li class="file"><a href="../../lib/matrizdispersascp_rb~.html">matrizdispersascp.rb~</a>
+  
+    <li class="file"><a href="../../lib/mcd_rb~.html">mcd.rb~</a>
+  
+    <li class="file"><a href="../../matrizdispersascp_gemspec.html">matrizdispersascp.gemspec</a>
+  
+    <li class="file"><a href="../../spec/matrizdispersascp_spec_rb~.html">matrizdispersascp_spec.rb~</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="../../Fraccion.html">Fraccion</a>
+  
+    <li><a href="../../Matriz.html">Matriz</a>
+  
+    <li><a href="../../Matrizdispersascp.html">Matrizdispersascp</a>
+  
+    <li><a href="../../Matrizdispersascp/MatrizDensa.html">Matrizdispersascp::MatrizDensa</a>
+  
+    <li><a href="../../Matrizdispersascp/MatrizDispersa.html">Matrizdispersascp::MatrizDispersa</a>
+  
+    <li><a href="../../Object.html">Object</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation" class="description">
+  
+<p>var search_data = {“index”:{“<a
+href="http://">searchIndex”:[“fraccion”,“matriz”,“matrizdispersascp”,“matrizdensa”,“matrizdispersa”,“object”,“%()”,“*()”,“*()”,“*()”,“+()”,“+()”,“+()”,“-()”,“-()”,“-()”,“-@()”,“-@()”,“/()”,“<()","<=()","==()",">()”,“>=()”,“mcd()”,“</a>()”,“[]=()”,“<a
+href="http://">abs()”,“coerce()”,“denom()”,“max()”,“max()”,“min()”,“min()”,“new()”,“new()”,“new()”,“new()”,“num()”,“reciprocal()”,“reduce()”,“to_f()”,“to_f()”,“to_f()”,“to_s()”,“to_s()”,“to_s()”,“gemfile”,“guardfile”,“license”,“rakefile”,“created.rid”,“fraccion.rb~”,“matriz.rb~”,“matrizdispersascp.rb~”,“mcd.rb~”,“matrizdispersascp.gemspec”,“matrizdispersascp_spec.rb~”],“longSearchIndex”:[“fraccion”,“matriz”,“matrizdispersascp”,“matrizdispersascp::matrizdensa”,“matrizdispersascp::matrizdispersa”,“object”,“fraccion#%()”,“fraccion#*()”,“matriz#*()”,“matrizdispersascp::matrizdispersa#*()”,“fraccion#+()”,“matriz#+()”,“matrizdispersascp::matrizdispersa#+()”,“fraccion#-()”,“matriz#-()”,“matrizdispersascp::matrizdispersa#-()”,“fraccion#-@()”,“matriz#-@()”,“fraccion#/()”,“fraccion#<()","fraccion#<=()","fraccion#==()","fraccion#>()”,“fraccion#>=()”,“object#mcd()”,“matriz#</a>()”,“<a
+href="http://">matriz#</a>,”<a
+href="http://"Fraccion","","Fraccion.html","",""">info“:[</a>,[”<a
+href="http://"Matrizdispersascp","","Matrizdispersascp.html","",""">Matriz“,”“,”Matriz.html“,”“,”“],</a>,[”<a
+href=""Matrizdispersascp::MatrizDispersa","","Matrizdispersascp/MatrizDispersa.html","",""">:MatrizDensa“,”“,”Matrizdispersascp/MatrizDensa.html“,”“,”“],</a>,[”<a
+href="http://"%","Fraccion","Fraccion.html#method-i-25","(frac)",""">Object“,”“,”Object.html“,”“,”“],</a>,[”*“,”<a
+href="http://"*","Matriz","Matriz.html#method-i-2A","(num)",""">Fraccion“,”Fraccion.html#method-i-2A“,”(frac)“,”“],</a>,[”*“,”Matrizdispersascp::MatrizDispersa“,”Matrizdispersascp/MatrizDispersa.html#method-i-2A“,”(o)“,”&lt;p&gt;Metodo
+que calcula la <a
+href="http://"+","Fraccion","Fraccion.html#method-i-2B","(frac)",""">multiplicacionn“],</a>,[”+“,”Matriz“,”Matriz.html#method-i-2B“,”(matAux)“,”“],[”+“,”Matrizdispersascp::MatrizDispersa“,”Matrizdispersascp/MatrizDispersa.html#method-i-2B“,”(o)“,”&lt;p&gt;Suma
+de <a
+href="http://"-","Fraccion","Fraccion.html#method-i-2D","(frac)",""">matricesn“],</a>,[”-“,”Matriz“,”Matriz.html#method-i-2D“,”(matAux)“,”“],[”-“,”Matrizdispersascp::MatrizDispersa“,”Matrizdispersascp/MatrizDispersa.html#method-i-2D“,”(o)“,”&lt;p&gt;Resta
+de <a
+href="http://"-@","Fraccion","Fraccion.html#method-i-2D-40","()",""">matricesn“],</a>,[”-@“,”Matriz“,”Matriz.html#method-i-2D-40“,”()“,”“],[”/“,”Fraccion“,”Fraccion.html#method-i-2F“,”(frac)“,”&lt;p&gt;Método
+divide dos fracciones con / y dar el resultado de forma
+reducidan“],[”&lt;“,”Fraccion“,”Fraccion.html#method-i-3C“,”(frac)“,”&lt;p&gt;Método
+se debe de poder comprobar si una fracion es menor que
+otran“],[”&lt;=“,”Fraccion“,”Fraccion.html#method-i-3C-3D“,”(frac)“,”&lt;p&gt;se
+debe de poder comprobar si una fracion es menor o igual que <a
+href="http://"==","Fraccion","Fraccion.html#method-i-3D-3D","(frac)",""">otran“],</a>,[”&gt;“,”Fraccion“,”Fraccion.html#method-i-3E“,”(frac)“,”&lt;p&gt;se
+debe de poder comprobar si una fracion es mayor que
+otran“],[”&gt;=“,”Fraccion“,”Fraccion.html#method-i-3E-3D“,”(frac)“,”&lt;p&gt;se
+debe de poder comprobar si una fracion es mayor o igual que
+otran“],[”Mcd“,”Object“,”Object.html#method-i-Mcd“,”(u,v)“,”&lt;p&gt;mcd.rbn&lt;p&gt;Autor::Pedro
+Javier Núñez Rodríguez y Constanza Leon Baritussion&lt;p&gt;Maximo Comun <a
+href="http://">Divisorn“],[”</a>“,”Matriz“,”Matriz.html#method-i-5B-5D“,”(fila,
+<a
+href="http://">columna)“,”“],[”</a>=“,”Matriz“,”Matriz.html#method-i-5B-5D-3D“,”(fila,
+columna, <a
+href="http://"abs","Fraccion","Fraccion.html#method-i-abs","()",""">valor)“,”“],</a>,[”coerce“,”Fraccion“,”Fraccion.html#method-i-coerce“,”(frac)“,”&lt;p&gt;metodo
+<a
+href="http://"denom","Fraccion","Fraccion.html#method-i-denom","()",""">coercen“],</a>,[”max“,”Matriz“,”Matriz.html#method-i-max“,”()“,”“],[”max“,”Matrizdispersascp::MatrizDispersa“,”Matrizdispersascp/MatrizDispersa.html#method-i-max“,”()“,”&lt;p&gt;Meodo
+que calcula el maximo de una matriz <a
+href="http://"min","Matriz","Matriz.html#method-i-min","()",""">dispersan“],</a>,[”min“,”Matrizdispersascp::MatrizDispersa“,”Matrizdispersascp/MatrizDispersa.html#method-i-min“,”()“,”&lt;p&gt;Metodo
+que calcula el minimo de una mariz
+dispersan“],[”new“,”Fraccion“,”Fraccion.html#method-c-new“,”(a, <a
+href="http://"new","Matriz","Matriz.html#method-c-new","(m)",""">b)“,”“],</a>,[”<a
+href=""new","Matrizdispersascp::MatrizDispersa","Matrizdispersascp/MatrizDispersa.html#method-c-new","(matriz)",""">new“,”Matrizdispersascp::MatrizDensa“,”Matrizdispersascp/MatrizDensa.html#method-c-new“,”(m)“,”“],</a>,[”<a
+href="http://"reciprocal","Fraccion","Fraccion.html#method-i-reciprocal","()",""">num“,”Fraccion“,”Fraccion.html#method-i-num“,”()“,”“],</a>,[”<a
+href="http://"to_f","Fraccion","Fraccion.html#method-i-to_f","()",""">reduce“,”Fraccion“,”Fraccion.html#method-i-reduce“,”()“,”“],</a>,[”<a
+href=""to_f","Matrizdispersascp::MatrizDispersa","Matrizdispersascp/MatrizDispersa.html#method-i-to_f","()",""">to_f“,”Matriz“,”Matriz.html#method-i-to_f“,”()“,”“],</a>,[”<a
+href="http://"to_s","Matriz","Matriz.html#method-i-to_s","()",""">to_s“,”Fraccion“,”Fraccion.html#method-i-to_s“,”()“,”“],</a>,[”to_s“,”Matrizdispersascp::MatrizDispersa“,”Matrizdispersascp/MatrizDispersa.html#method-i-to_s“,”()“,”“],[”Gemfile“,”“,”Gemfile.html“,”“,”&lt;p&gt;source
+&amp;#39;rubygems.org&amp;#39;n&lt;p&gt;# Specify your gem&amp;#39;s
+dependencies in <a
+href="../../matrizdispersascp_gemspec.html">matrizdispersascp.gemspec</a>
+gemn&amp;#39;rake&amp;#39;
+…n“],[”Guardfile“,”“,”Guardfile.html“,”“,”&lt;p&gt;guard
+&amp;#39;bundler&amp;#39;
+donn&lt;pre&gt;watch(&amp;#39;Gemfile&amp;#39;)&lt;/pre&gt;n&lt;p&gt;endn“],[”LICENSE“,”“,”LICENSE_txt.html“,”“,”&lt;p&gt;Copyright
+© 2013 constanza leonn&lt;p&gt;MIT Licensen&lt;p&gt;Permission is hereby
+granted, free of charge, to any person
+…n“],[”Rakefile“,”“,”Rakefile.html“,”“,”&lt;p&gt;require “<a
+href="http://"created.rid","","doc/created_rid.html","",""">bundler/gem_tasks”n“],</a>,[”fraccion.rb~“,”“,”lib/fraccion_rb~.html“,”“,”&lt;p&gt;#
+= fraccion.rb # # Etsii ull grado informática # Lenguajes y Paradigmas
+denla programacion # Autor::Pedro
+…n“],[”matriz.rb~“,”“,”lib/matriz_rb~.html“,”“,”&lt;p&gt;# = matriz.rb # #
+Etsii ull grado informática # Lenguajes y Paradigmas denla programacion #
+Autor::Pedro
+…n“],[”matrizdispersascp.rb~“,”“,”lib/matrizdispersascp_rb~.html“,”“,”&lt;p&gt;#
+= matrizdispersascp.rb # # Etsii ull grado informática # Lenguajes
+ynParadigmas de la programacion
+…n“],[”mcd.rb~“,”“,”lib/mcd_rb~.html“,”“,”&lt;p&gt;# = mcd.rb #
+Autor::Pedro Javier Núñez Rodríguez y Constanza LeonnBaritussio # # ==
+Maximo Comun Divisor
+…n“],[”matrizdispersascp.gemspec“,”“,”matrizdispersascp_gemspec.html“,”“,”&lt;p&gt;lib
+= File.expand_path(&amp;#39;../lib&amp;#39;, __FILE__)
+$LOAD_PATH.unshift(lib)nunless $LOAD_PATH.include?(lib)
+…n“],[”matrizdispersascp_spec.rb~“,”“,”spec/matrizdispersascp_spec_rb~.html“,”“,”&lt;p&gt;#
+Etsii ull grado informática # Lenguajes y Paradigmas de la programacion
+#nPedro Javier Núñez Rodríguez …n“]]}}</p>
+
+</div>
+
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 4.0.0.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+
