@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+<title>class MatrizDSL - RDoc Documentation</title>
+
+<link type="text/css" media="screen" href="./rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="./js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/darkfish.js"></script>
+
+
+<body id="top" class="class">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="./index.html">Home</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  
+
+  <div id="file-metadata">
+    <nav id="file-list-section" class="section">
+  <h3 class="section-header">Defined In</h3>
+  <ul>
+    <li>lib/matriz_DSL.rb
+  </ul>
+</nav>
+
+    
+  </div>
+
+  <div id="class-metadata">
+    
+    <nav id="parent-class-section" class="section">
+  <h3 class="section-header">Parent</h3>
+  
+  <p class="link"><a href="Matriz.html">Matriz</a>
+  
+</nav>
+
+    
+    
+    <!-- Method Quickref -->
+<nav id="method-list-section" class="section">
+  <h3 class="section-header">Methods</h3>
+
+  <ul class="link-list">
+    
+    <li ><a href="#method-c-new">::new</a>
+    
+    <li ><a href="#method-i-execute">#execute</a>
+    
+    <li ><a href="#method-i-operand">#operand</a>
+    
+    <li ><a href="#method-i-option">#option</a>
+    
+  </ul>
+</nav>
+
+  </div>
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="./Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="./Gemfile_lock.html">Gemfile.lock</a>
+  
+    <li class="file"><a href="./Guardfile.html">Guardfile</a>
+  
+    <li class="file"><a href="./LICENSE_txt.html">LICENSE</a>
+  
+    <li class="file"><a href="./Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="./doc/Fraccion_html.html">Fraccion.html</a>
+  
+    <li class="file"><a href="./doc/Gemfile_html.html">Gemfile.html</a>
+  
+    <li class="file"><a href="./doc/Guardfile_html.html">Guardfile.html</a>
+  
+    <li class="file"><a href="./doc/LICENSE_txt_html.html">LICENSE_txt.html</a>
+  
+    <li class="file"><a href="./doc/Matriz_html.html">Matriz.html</a>
+  
+    <li class="file"><a href="./doc/Matrizdispersascp_html.html">Matrizdispersascp.html</a>
+  
+    <li class="file"><a href="./doc/Matrizdispersascp/MatrizDensa_html.html">MatrizDensa.html</a>
+  
+    <li class="file"><a href="./doc/Matrizdispersascp/MatrizDispersa_html.html">MatrizDispersa.html</a>
+  
+    <li class="file"><a href="./doc/Object_html.html">Object.html</a>
+  
+    <li class="file"><a href="./doc/Rakefile_html.html">Rakefile.html</a>
+  
+    <li class="file"><a href="./doc/created_rid.html">created.rid</a>
+  
+    <li class="file"><a href="./doc/doc/Fraccion_html_html.html">Fraccion_html.html</a>
+  
+    <li class="file"><a href="./doc/doc/Gemfile_html_html.html">Gemfile_html.html</a>
+  
+    <li class="file"><a href="./doc/doc/Guardfile_html_html.html">Guardfile_html.html</a>
+  
+    <li class="file"><a href="./doc/doc/LICENSE_txt_html_html.html">LICENSE_txt_html.html</a>
+  
+    <li class="file"><a href="./doc/doc/Matriz_html_html.html">Matriz_html.html</a>
+  
+    <li class="file"><a href="./doc/doc/Matrizdispersascp/MatrizDensa_html_html.html">MatrizDensa_html.html</a>
+  
+    <li class="file"><a href="./doc/doc/Matrizdispersascp/MatrizDispersa_html_html.html">MatrizDispersa_html.html</a>
+  
+    <li class="file"><a href="./doc/doc/Matrizdispersascp_html_html.html">Matrizdispersascp_html.html</a>
+  
+    <li class="file"><a href="./doc/doc/Object_html_html.html">Object_html.html</a>
+  
+    <li class="file"><a href="./doc/doc/Rakefile_html_html.html">Rakefile_html.html</a>
+  
+    <li class="file"><a href="./doc/doc/created_rid_html.html">created_rid.html</a>
+  
+    <li class="file"><a href="./doc/doc/doc/created_rid_html_html.html">created_rid_html.html</a>
+  
+    <li class="file"><a href="./doc/doc/index_html_html.html">index_html.html</a>
+  
+    <li class="file"><a href="./doc/doc/js/darkfish_js_html.html">darkfish_js.html</a>
+  
+    <li class="file"><a href="./doc/doc/js/jquery_js_html.html">jquery_js.html</a>
+  
+    <li class="file"><a href="./doc/doc/js/navigation_js_html.html">navigation_js.html</a>
+  
+    <li class="file"><a href="./doc/doc/js/search_index_js_html.html">search_index_js.html</a>
+  
+    <li class="file"><a href="./doc/doc/js/search_js_html.html">search_js.html</a>
+  
+    <li class="file"><a href="./doc/doc/js/searcher_js_html.html">searcher_js.html</a>
+  
+    <li class="file"><a href="./doc/doc/lib/fraccion_rb~_html_html.html">fraccion_rb~_html.html</a>
+  
+    <li class="file"><a href="./doc/doc/lib/matriz_rb~_html_html.html">matriz_rb~_html.html</a>
+  
+    <li class="file"><a href="./doc/doc/lib/matrizdispersascp_rb~_html_html.html">matrizdispersascp_rb~_html.html</a>
+  
+    <li class="file"><a href="./doc/doc/lib/mcd_rb~_html_html.html">mcd_rb~_html.html</a>
+  
+    <li class="file"><a href="./doc/doc/matrizdispersascp_gemspec_html_html.html">matrizdispersascp_gemspec_html.html</a>
+  
+    <li class="file"><a href="./doc/doc/rdoc_css_html.html">rdoc_css.html</a>
+  
+    <li class="file"><a href="./doc/doc/spec/matrizdispersascp_spec_rb~_html_html.html">matrizdispersascp_spec_rb~_html.html</a>
+  
+    <li class="file"><a href="./doc/doc/table_of_contents_html_html.html">table_of_contents_html.html</a>
+  
+    <li class="file"><a href="./doc/index_html.html">index.html</a>
+  
+    <li class="file"><a href="./doc/js/darkfish_js.html">darkfish.js</a>
+  
+    <li class="file"><a href="./doc/js/jquery_js.html">jquery.js</a>
+  
+    <li class="file"><a href="./doc/js/navigation_js.html">navigation.js</a>
+  
+    <li class="file"><a href="./doc/js/search_js.html">search.js</a>
+  
+    <li class="file"><a href="./doc/js/search_index_js.html">search_index.js</a>
+  
+    <li class="file"><a href="./doc/js/searcher_js.html">searcher.js</a>
+  
+    <li class="file"><a href="./doc/lib/fraccion_rb~_html.html">fraccion_rb~.html</a>
+  
+    <li class="file"><a href="./doc/lib/matriz_rb~_html.html">matriz_rb~.html</a>
+  
+    <li class="file"><a href="./doc/lib/matrizdispersa_rb~_html.html">matrizdispersa_rb~.html</a>
+  
+    <li class="file"><a href="./doc/lib/matrizdispersascp/version_rb~_html.html">version_rb~.html</a>
+  
+    <li class="file"><a href="./doc/lib/matrizdispersascp_rb~_html.html">matrizdispersascp_rb~.html</a>
+  
+    <li class="file"><a href="./doc/lib/mcd_rb~_html.html">mcd_rb~.html</a>
+  
+    <li class="file"><a href="./doc/matrizdispersascp_gemspec_html.html">matrizdispersascp_gemspec.html</a>
+  
+    <li class="file"><a href="./doc/rdoc_css.html">rdoc.css</a>
+  
+    <li class="file"><a href="./doc/spec/matrizdispersascp_spec_rb~_html.html">matrizdispersascp_spec_rb~.html</a>
+  
+    <li class="file"><a href="./doc/table_of_contents_html.html">table_of_contents.html</a>
+  
+    <li class="file"><a href="./lib/fraccion_rb~.html">fraccion.rb~</a>
+  
+    <li class="file"><a href="./lib/matriz_rb~.html">matriz.rb~</a>
+  
+    <li class="file"><a href="./lib/matriz_DSL_rb~.html">matriz_DSL.rb~</a>
+  
+    <li class="file"><a href="./lib/matrizdispersa_rb~.html">matrizdispersa.rb~</a>
+  
+    <li class="file"><a href="./lib/matrizdispersascp_rb~.html">matrizdispersascp.rb~</a>
+  
+    <li class="file"><a href="./lib/matrizdispersascp/version_rb~.html">version.rb~</a>
+  
+    <li class="file"><a href="./lib/mcd_rb~.html">mcd.rb~</a>
+  
+    <li class="file"><a href="./matrizdispersascp_gemspec.html">matrizdispersascp.gemspec</a>
+  
+    <li class="file"><a href="./matrizdispersascp_gemspec~.html">matrizdispersascp.gemspec~</a>
+  
+    <li class="file"><a href="./readme.html">readme</a>
+  
+    <li class="file"><a href="./spec/matrizdispersascp_spec_rb~.html">matrizdispersascp_spec.rb~</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="./Fraccion.html">Fraccion</a>
+  
+    <li><a href="./Matriz.html">Matriz</a>
+  
+    <li><a href="./MatrizDSL.html">MatrizDSL</a>
+  
+    <li><a href="./Matrizdispersascp.html">Matrizdispersascp</a>
+  
+    <li><a href="./Matrizdispersascp/MatrizDensa.html">Matrizdispersascp::MatrizDensa</a>
+  
+    <li><a href="./Matrizdispersascp/MatrizDispersa.html">Matrizdispersascp::MatrizDispersa</a>
+  
+    <li><a href="./Object.html">Object</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation">
+  <h1 class="class">class MatrizDSL</h1>
+
+  <div id="description" class="description">
+    
+<h1 id="label-Clase+de+Matriz+DSL">Clase de <a href="Matriz.html">Matriz</a> DSL<span><a href="#label-Clase+de+Matriz+DSL">&para;</a> <a href="#documentation">&uarr;</a></span></h1>
+
+  </div><!-- description -->
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+    <!-- Attributes -->
+    <section id="attribute-method-details" class="method-section section">
+      <h3 class="section-header">Attributes</h3>
+
+      
+      <div id="attribute-i-matrizA" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">matrizA</span><span
+            class="attribute-access-type">[R]</span>
+        </div>
+
+        <div class="method-description">
+        
+        
+        
+        </div>
+      </div>
+      
+      <div id="attribute-i-matrizB" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">matrizB</span><span
+            class="attribute-access-type">[R]</span>
+        </div>
+
+        <div class="method-description">
+        
+        
+        
+        </div>
+      </div>
+      
+    </section><!-- attribute-method-details -->
+    
+
+    <!-- Methods -->
+    
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Instance Methods</h3>
+
+    
+      <div id="method-i-execute" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">execute</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <h2 id="method-i-execute-label-Definimos+la+funci%C3%B3n+de+ejecuci%C3%B3n+de+la+operaci%C3%B3n">Definimos la función de ejecución de la operación<span><a href="#method-i-execute-label-Definimos+la+funci%C3%B3n+de+ejecuci%C3%B3n+de+la+operaci%C3%B3n">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+          
+          
+
+          
+          <div class="method-source-code" id="execute-source">
+            <pre><span class="ruby-comment"># File lib/matriz_DSL.rb, line 51</span>
+        <span class="ruby-keyword">def</span> <span class="ruby-identifier">execute</span>
+                
+                <span class="ruby-comment"># Comprobamos la validez de la operación</span>
+                <span class="ruby-keyword">if</span> <span class="ruby-ivar">@op</span> = <span class="ruby-string">&quot;&amp;&quot;</span>
+                        <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;La Operacion no es valida&quot;</span>
+                        <span class="ruby-keyword">return</span> <span class="ruby-value">0</span>
+                <span class="ruby-keyword">end</span>
+                
+                <span class="ruby-comment"># Mostramos las matrices</span>
+                <span class="ruby-keyword">if</span> <span class="ruby-ivar">@matA</span> <span class="ruby-operator">!=</span> <span class="ruby-keyword">nil</span> <span class="ruby-keyword">and</span> <span class="ruby-ivar">@matB</span> <span class="ruby-operator">!=</span> <span class="ruby-keyword">nil</span>
+
+                        <span class="ruby-ivar">@matrizA</span> = <span class="ruby-string">&quot;Matriz&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-ivar">@claseMat</span>.<span class="ruby-identifier">to_s</span> <span class="ruby-operator">+</span> <span class="ruby-string">&quot;.new(@matA)&quot;</span>
+                        <span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;Matriz A: #{@matA}&quot;</span>
+
+                        <span class="ruby-ivar">@matrizB</span> = <span class="ruby-string">&quot;Matriz&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-ivar">@claseMat</span>.<span class="ruby-identifier">to_s</span> <span class="ruby-operator">+</span> <span class="ruby-string">&quot;.new(@matB)&quot;</span>
+                        <span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;Matriz B: #{@matB}&quot;</span>                
+
+                        <span class="ruby-identifier">resultado</span> = <span class="ruby-ivar">@matrizA</span>.<span class="ruby-identifier">to_s</span> <span class="ruby-operator">+</span> <span class="ruby-string">&quot;.&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-ivar">@op</span>.<span class="ruby-identifier">to_s</span> <span class="ruby-operator">+</span> <span class="ruby-string">&quot;(&quot;</span>  <span class="ruby-operator">+</span> <span class="ruby-string">&quot; &quot;</span> <span class="ruby-operator">+</span> <span class="ruby-ivar">@matrizB</span>.<span class="ruby-identifier">to_s</span> <span class="ruby-operator">+</span> <span class="ruby-string">&quot;)&quot;</span>
+                        <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;Resultado de la operacion ( &quot;</span> <span class="ruby-operator">+</span> <span class="ruby-ivar">@op_texto</span>.<span class="ruby-identifier">to_s</span> <span class="ruby-operator">+</span> <span class="ruby-string">&quot; ): &quot;</span>                        
+                        <span class="ruby-identifier">resultado</span> = <span class="ruby-identifier">eval</span>(<span class="ruby-identifier">resultado</span>)
+<span class="ruby-comment">#                        puts &quot;Resultado de la operacion ( &quot; + @op_texto.to_s + &quot; ): #{resultado}&quot;</span>
+
+                <span class="ruby-keyword">end</span>
+                
+        <span class="ruby-keyword">end</span></pre>
+          </div><!-- execute-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- execute-method -->
+
+    
+      <div id="method-i-operand" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">operand</span><span
+            class="method-args">(other)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <h2 id="method-i-operand-label-Definimos+el+operando">Definimos el operando<span><a href="#method-i-operand-label-Definimos+el+operando">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+          
+          
+
+          
+          <div class="method-source-code" id="operand-source">
+            <pre><span class="ruby-comment"># File lib/matriz_DSL.rb, line 37</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">operand</span>(<span class="ruby-identifier">other</span>)
+        
+                        
+        <span class="ruby-keyword">if</span>(<span class="ruby-ivar">@matA</span> <span class="ruby-operator">==</span> <span class="ruby-keyword">nil</span>)
+                <span class="ruby-ivar">@matA</span> = <span class="ruby-identifier">other</span>
+        <span class="ruby-keyword">else</span>
+                <span class="ruby-ivar">@matB</span> = <span class="ruby-identifier">other</span>
+        <span class="ruby-keyword">end</span>
+                     
+        <span class="ruby-identifier">execute</span>
+        
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- operand-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- operand-method -->
+
+    
+      <div id="method-i-option" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">option</span><span
+            class="method-args">(opc)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <h2 id="method-i-option-label-Asignamos+la+opci%C3%B3n+de+matriz+">Asignamos la opción de matriz <span><a href="#method-i-option-label-Asignamos+la+opci%C3%B3n+de+matriz+">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+          
+          
+
+          
+          <div class="method-source-code" id="option-source">
+            <pre><span class="ruby-comment"># File lib/matriz_DSL.rb, line 30</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">option</span>(<span class="ruby-identifier">opc</span>)
+        
+        <span class="ruby-ivar">@claseMat</span> = <span class="ruby-identifier">opc</span>
+        
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- option-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- option-method -->
+
+    
+    </section><!-- public-instance-method-details -->
+  
+     <section id="public-class-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Class Methods</h3>
+
+    
+      <div id="method-c-new" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">new</span><span
+            class="method-args">(operation)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <h2 id="method-c-new-label-Inicializaci%C3%B3n">Inicialización<span><a href="#method-c-new-label-Inicializaci%C3%B3n">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+          
+          
+
+          
+          <div class="method-source-code" id="new-source">
+            <pre><span class="ruby-comment"># File lib/matriz_DSL.rb, line 5</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">operation</span>)
+
+        <span class="ruby-ivar">@op_texto</span> = <span class="ruby-identifier">operation</span>.<span class="ruby-identifier">to_s</span>
+        
+        <span class="ruby-comment"># Por defecto la operación será &amp; para devolver error</span>
+        <span class="ruby-keyword">case</span> <span class="ruby-ivar">@op_texto</span>        
+
+        <span class="ruby-keyword">when</span> <span class="ruby-string">&quot;suma&quot;</span>
+                <span class="ruby-ivar">@op</span> = <span class="ruby-string">&quot;+&quot;</span>            
+        <span class="ruby-keyword">when</span> <span class="ruby-string">&quot;resta&quot;</span>
+                <span class="ruby-ivar">@op</span> = <span class="ruby-string">&quot;-&quot;</span>
+        <span class="ruby-keyword">when</span> <span class="ruby-string">&quot;producto&quot;</span>
+                <span class="ruby-ivar">@op</span> = <span class="ruby-string">&quot;*&quot;</span>
+        <span class="ruby-keyword">else</span>
+                <span class="ruby-ivar">@op</span> = <span class="ruby-string">&quot;&amp;&quot;</span>            
+        <span class="ruby-keyword">end</span>  
+                                
+        <span class="ruby-ivar">@matA</span> = <span class="ruby-keyword">nil</span>
+        <span class="ruby-ivar">@matB</span> = <span class="ruby-keyword">nil</span>
+
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- new-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- new-method -->
+
+    
+    </section><!-- public-class-method-details -->
+  
+  </section><!-- 5Buntitled-5D -->
+
+</div><!-- documentation -->
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 4.0.1.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+
