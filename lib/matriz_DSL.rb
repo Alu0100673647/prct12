@@ -1,105 +1,71 @@
 #= Clase de Matriz DSL
+require './matriz.rb'
+
 class MatrizDSL < Matriz
 
 	#== Inicialización
-	def initialize(operation)
+	def initialize(op, opc)
 
-                @op_texto = operation.to_s
-                
-		# Por defecto la operación será & para devolver error
-		case @op_texto	
-
-		when "suma"
-			@op = "+"		
-		when "resta"
-			@op = "-"
-		when "producto"
-			@op = "*"
-		else
-			@op = "&"		
-		end  
-					
-                @matA = nil
-                @matB = nil
+		@op = op					
+		@clase = opc
+                @mat1 = nil
+                @mat2 = nil
 
 	end
 
-	attr_reader :matrizA, :matrizB
-
-	#== Asignamos la opción de matriz 
-        def option(opc)
-                
-		@claseMat = opc
-                
-        end
+	attr_reader :matriz1, :matriz2
 
 	#== Definimos el operando
-	def operand(other)
+	def operando(other)
                 
 		                
-                if(@matA == nil)
-                        @matA = other
+                if(@mat1 == nil)
+                        @mat1 = other
                 else
-                        @matB = other
+                        @mat2 = other
                 end
                              
-                execute
+		# Realizamos la operación
+                if @mat1 != nil and @mat2 != nil
+	                ejecucion
+		end
                 
         end
 	
 	#== Definimos la función de ejecución de la operación
-        def execute
+        def ejecucion
                 
-                # Comprobamos la validez de la operación
-		if @op = "&"
-			puts "La Operacion no es valida"
-			return 0
-		end
-                
-		# Mostramos las matrices
-                if @matA != nil and @matB != nil
+		@matriz1 = "Matriz" + @clase.to_s + ".new(@mat1)"
+                puts "Matriz 1: #{@mat1}"
 
-			@matrizA = "Matriz" + @claseMat.to_s + ".new(@matA)"
-                        puts "Matriz A: #{@matA}"
+                @matriz2 = "Matriz" + @clase.to_s + ".new(@mat2)"
+                puts "Matriz 2: #{@mat2}"                
 
-                        @matrizB = "Matriz" + @claseMat.to_s + ".new(@matB)"
-                        puts "Matriz B: #{@matB}"                
+                resultado = @matriz1.to_s + "." + @op.to_s + "(" + @matriz2.to_s + ")"
+		puts "Resultado: #{resultado}"
 
-                        resultado = @matrizA.to_s + "." + @op.to_s + "("  + " " + @matrizB.to_s + ")"
-			puts "Resultado de la operacion ( " + @op_texto.to_s + " ): "                        
-			resultado = eval(resultado)
-#                        puts "Resultado de la operacion ( " + @op_texto.to_s + " ): #{resultado}"
-
-                end
-                
         end
 
 end
 
-# SUMA DENSA
-x = MatrizDSL.new("suma")
-x.option "Densa"
 
-x.operand [[1,2],[3,4]]
-x.operand [[221,2],[3,4]]
+# ------------------------------------------------------SUMA DENSA-------------------------------------------
+x = MatrizDSL.new("+","Densa")
+x.operando [[1,2],[3,4]]
+x.operando [[5,6],[7,9]]
 
-# RESTA DENSA
-y = MatrizDSL.new("resta")
-y.option "Densa"
+# ---------------------------------------------------------RESTA DENSA---------------------------------------
+x = MatrizDSL.new("-","Densa")
+x.operando [[1,2],[3,4]]
+x.operando [[5,6],[7,9]]
 
-y.operand [[1,2],[3,4]]
-y.operand [[221,2],[3,4]]
+# -------------------------------------------------------PRODUCTO DENSA-------------------------------------
+x = MatrizDSL.new("*","Densa")
+x.operando [[1,2],[3,4]]
+x.operando [[5,6],[7,9]]
 
-# PRODUCTO DENSA
-z = MatrizDSL.new("producto")
-z.option "Densa"
+# ----------------------------------------------------SUMA DISPERSA----------------------------------------
+x = MatrizDSL.new("+","Dispersa")
+x.operando [[1,2],[3,4]]
+x.operando [[5,6],[7,9]]
 
-z.operand [[1,2],[3,4]]
-z.operand [[221,2],[3,4]]
-
-# SUMA DISPERSA
-x = MatrizDSL.new("suma")
-x.option "Dispersa"
-
-x.operand [[1,2],[3,4]]
-x.operand [[221,2],[3,4]]

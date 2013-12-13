@@ -22,7 +22,7 @@
 #  fraccionResultado = fracion1 + fraccion2
 # * %: devuelve el resto reducido de dos fracciones
 
-require 'mcd'
+require './mcd.rb'
 
 class Fraccion
 	

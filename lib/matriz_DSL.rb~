@@ -1,19 +1,20 @@
 #= Clase de Matriz DSL
-class MatrizDSL < Matriz
+
+class MatrizDSL < Matrizdispersascp
 
 	#== Inicialización
-	def initialize(operacion)
+	def initialize(operation)
 
-                @op_texto = operacion.to_s
+                @op_texto = operation.to_s
                 
 		# Por defecto la operación será & para devolver error
 		case @op_texto	
 
-		when "suma"
+			when "suma"
 			@op = "+"		
-		when "resta"
+			when "resta"
 			@op = "-"
-		when "producto"
+			when "producto"
 			@op = "*"
 		else
 			@op = "&"		
@@ -51,7 +52,7 @@ class MatrizDSL < Matriz
         def execute
                 
                 # Comprobamos la validez de la operación
-		if @op = "&"
+		if @op == "&"
 			puts "La Operacion no es valida"
 			return 0
 		end
@@ -76,28 +77,28 @@ class MatrizDSL < Matriz
 
 end
 
-# SUMA DENSA
+# ------------------------------------------------------SUMA DENSA-------------------------------------------
 x = MatrizDSL.new("suma")
 x.option "Densa"
 
 x.operand [[1,2],[3,4]]
 x.operand [[221,2],[3,4]]
 
-# RESTA DENSA
+# ---------------------------------------------------------RESTA DENSA---------------------------------------
 y = MatrizDSL.new("resta")
 y.option "Densa"
 
 y.operand [[1,2],[3,4]]
 y.operand [[221,2],[3,4]]
 
-# PRODUCTO DENSA
+# -------------------------------------------------------PRODUCTO DENSA-------------------------------------
 z = MatrizDSL.new("producto")
 z.option "Densa"
 
 z.operand [[1,2],[3,4]]
 z.operand [[221,2],[3,4]]
 
-# SUMA DISPERSA
+# ----------------------------------------------------SUMA DISPERSA----------------------------------------
 x = MatrizDSL.new("suma")
 x.option "Dispersa"
 

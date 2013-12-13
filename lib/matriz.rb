@@ -19,7 +19,7 @@
 #  matrizResultado = matriz1 * matriz2
 # * min y max de los valores de una matriz
 
-require 'fraccion'
+require './fraccion.rb'
 
 class Matriz 
  
